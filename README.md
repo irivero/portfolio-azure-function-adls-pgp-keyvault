@@ -358,8 +358,9 @@ For production use:
 ## 📧 Contact
 
 For questions or feedback about this reference implementation:
-- Open an issue on GitHub
-- Connect on [LinkedIn](https://linkedin.com/in/yourprofile)
+- Open an issue on [GitHub](https://github.com/irivero/portfolio-azure-function-adls-pgp-keyvault/issues)
+- GitHub: [@irivero](https://github.com/irivero)
+- Email: idia.herrera@gmail.com
 
 ---
 

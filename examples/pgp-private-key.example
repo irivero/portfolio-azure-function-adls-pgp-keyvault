@@ -1,0 +1,40 @@
+# ⚠️ SECURITY WARNING
+# This file contains example secrets for TESTING ONLY
+# NEVER use these values in production
+# NEVER commit real secrets to version control
+
+# Example PGP private key for testing
+# Generate your own test key with: gpg --batch --gen-key
+-----BEGIN PGP PRIVATE KEY BLOCK-----
+
+lQPGBGabc123BCACpQ1234567890abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrst
+uvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklm
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdef
+
+[Additional key data would be here in a real key]
+
+This is an EXAMPLE key block for demonstration purposes.
+Real PGP keys are much longer and contain actual cryptographic data.
+
+Generate a real test key with:
+  gpg --batch --gen-key <<EOF
+  %no-protection
+  Key-Type: RSA
+  Key-Length: 2048
+  Name-Real: Test User
+  Name-Email: test@example.com
+  Expire-Date: 1y
+  %commit
+  EOF
+
+Then export with:
+  gpg --armor --export-secret-keys test@example.com
+
+-----END PGP PRIVATE KEY BLOCK-----
+
+# For production:
+# 1. Generate a strong PGP key pair
+# 2. Store the private key in Azure Key Vault
+# 3. Share the public key with your partners
+# 4. NEVER commit real keys to source control

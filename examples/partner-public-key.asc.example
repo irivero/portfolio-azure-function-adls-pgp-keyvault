@@ -1,0 +1,24 @@
+# Example PGP Public Key
+# This public key corresponds to the example private key
+# Share this with partners who need to encrypt files for you
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mQENBGabc123BCACpQ1234567890abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrst
+uvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklm
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdef
+
+[Public key data would be here]
+
+This is an EXAMPLE public key block for demonstration.
+
+-----END PGP PUBLIC KEY BLOCK-----
+
+# How to use this in your setup:
+# 1. Upload this .asc file to your ADLS container (e.g., keys/partner-public-key.asc)
+# 2. Reference it in the EncryptAndRename API call: "pgpKeyPath": "keys/partner-public-key.asc"
+# 3. Share this public key with partners who need to decrypt your files
+
+# To export your own public key:
+# gpg --armor --export test@example.com > public-key.asc

@@ -1,0 +1,26 @@
+# Example PGP Passphrase
+# This is a SAMPLE passphrase for testing only
+
+your-secure-passphrase-here
+
+# ⚠️ SECURITY GUIDELINES FOR PRODUCTION:
+
+# 1. Generate a strong passphrase:
+#    - Minimum 20 characters
+#    - Mix of uppercase, lowercase, numbers, special characters
+#    - Use a password manager to generate random passphrases
+
+# 2. Store securely:
+#    - Use Azure Key Vault for production secrets
+#    - Enable Key Vault access policies for your Function App Managed Identity
+#    - Never hardcode passphrases in code or configuration files
+
+# 3. Rotate regularly:
+#    - Implement passphrase rotation policy (e.g., every 90 days)
+#    - Update Key Vault secrets and redeploy applications
+
+# Example strong passphrase format:
+# Tr0ub4dor&3-Correct-Horse-Battery-Staple-2026!
+
+# To generate a random passphrase (24 chars):
+# python -c "import secrets, string; print(''.join(secrets.choice(string.ascii_letters + string.digits + '!@#$%^&*') for _ in range(24)))"

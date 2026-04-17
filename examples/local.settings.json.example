@@ -1,0 +1,21 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "PYTHON_ISOLATE_WORKER_DEPENDENCIES": "1",
+    
+    "_comment_adls": "For local development, use connection string. For production, use ADLS_ACCOUNT_NAME with Managed Identity",
+    "ADLS_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=YOUR_STORAGE_ACCOUNT;AccountKey=YOUR_ACCOUNT_KEY;EndpointSuffix=core.windows.net",
+    
+    "_comment_keyvault": "Azure Key Vault configuration",
+    "KEY_VAULT_NAME": "your-keyvault-name",
+    "PGP_KEY_SECRET_NAME": "pgp-private-key",
+    "PGP_PASS_SECRET_NAME": "pgp-passphrase",
+    
+    "_comment_processing": "Processing configuration",
+    "DECRYPT_WORKERS": "4",
+    "LOCAL_DEV": "true"
+  },
+  "languageWorkers:python:defaultExecutablePath": ".venv/Scripts/python.exe"
+}
